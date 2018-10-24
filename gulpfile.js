@@ -50,6 +50,11 @@ const map = [
   },
   {
     type: 'content',
+    src: helpers.source('prices/**/*.*'),
+    dist: 'prices'
+  },
+  {
+    type: 'content',
     src: [
       helpers.source('fonts/**/*.*'),
       helpers.vendor('font-awesome/fonts/*.*')
@@ -60,10 +65,12 @@ const map = [
     type: 'js',
     src: [
       helpers.vendor('jquery/dist/jquery.min.js'),
+      helpers.vendor('jquery.mmenu/dist/jquery.mmenu.js'),
       helpers.vendor('tether/dist/js/tether.min.js'),
       helpers.vendor('bootstrap/dist/js/bootstrap.js'),
       helpers.vendor('slick-carousel/slick/slick.min.js'),
-      helpers.source('js/app.js')
+      helpers.source('js/app.js'),
+
     ],
     dist: 'js',
     watchFiles: helpers.source('js/**/*.js')
@@ -215,4 +222,5 @@ gulp.task('watch', function () {
 });
 
 gulp.task('build', ['html', 'sass', 'js', 'content', 'browser-sync']);
+gulp.task('prod', ['content', 'html', 'sass', 'js']);
 gulp.task('default', ['build', 'watch']);

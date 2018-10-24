@@ -1,0 +1,23 @@
+footer {
+    background-color: $accent-deep-gray;
+    min-height: 330px;
+    height: 100%;
+    ul,
+    li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    li {
+        padding-right: 20px;
+    }
+    .bottom-logo {
+        display: inline-block;
+        width: 200px;
+    }
+    .liveinternet {
+        display: inline-block;
+        width: 40px;
+    }
+}

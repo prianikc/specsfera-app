@@ -1,0 +1,37 @@
+.modal-body {
+    padding: 3rem;
+}
+
+// .modal-header::after {
+//     position: absolute;
+//     content: '';
+//     width: 0;
+//     height: 0;
+//     border-top: 50px solid $accent-orange;
+//     ;
+//     border-right: 500px solid transparent;
+//     left: 0px;
+//     top: 62px;
+// }
+
+.modal-header {
+    background-color: $accent-orange;
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+    margin-bottom: 50px;
+    padding-left: 3rem;
+} 
+
+.modal-content {
+    font-size: 18px;
+}
+
+.close {
+    color: white;
+    text-shadow: none;
+    opacity: 1;
+    &:hover {
+        color: white;
+        opacity: 0.5;
+    }
+}

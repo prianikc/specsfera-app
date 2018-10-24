@@ -1,0 +1,49 @@
+.header {
+    background-image: url('../img/background_header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1164px;
+    height: 110vh;
+      
+}
+section.we-offer {
+    p {
+        max-width: 650px;
+    }
+    img {
+        display: inline-block;
+        width: 100%;
+        max-width: 270px;
+    }
+}
+section.logo-laying {
+    background-image: url('../img/logo-laying.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1273px;
+    p {
+        max-width: 597px;
+    }
+
+}
+section.active-shares {
+    .action {
+        cursor: pointer;
+    }
+    img {
+        width: 100%;
+        max-width: 377px;
+        &:hover {
+            transform: scale(1.02)
+        }
+    }
+}
+section.production {
+    background-image: url('../img/prodaction.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1273px;
+}
